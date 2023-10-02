@@ -1,256 +1,262 @@
+.boton, .boton--borrar {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: black;
+}
+
+.boton--borrar {
+  background-color: #C8FEDD;
+  color: yellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: 'humble';
-    src: url(../fonts/humble.ttf);
+  font-family: "humble";
+  src: url(../fonts/humble.ttf);
 }
-
 body {
-    font-family: 'lexend', sans-serif;
+  font-family: "lexend", sans-serif;
+  background-color: #057D5D;
+  color: #C8FEDD;
 }
 
 header {
-    background-color: #FFD522;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
+  background-color: #FFD522;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+}
+header .logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+header .lista-nav li {
+  display: inline;
+  margin: 10px 80px 10px 80px;
+}
+header .navbar {
+  background-color: #FFD522;
+}
+header .nav-link {
+  color: grey;
+  font-weight: bold;
+}
+
+footer .cajita {
+  background-color: #FFD522;
+  height: 70px;
+  margin-top: 0%;
+}
+footer .text-center {
+  color: #07AA7F;
+  margin-top: 30px;
+  text-align: end;
+  font-weight: bold;
 }
 
 h1 {
-    font-family: 'roboto';
+  font-family: "roboto";
+  color: #C8FEDD;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .caja-verde {
-    background-color:#07AA7F;
-    width: 1100px; 
-    height: 400px;  
-    margin: 0px 15px 20px 15px;
-    padding: 50px;
+  background-color: #07AA7F;
+  width: 1100px;
+  height: 400px;
+  margin: 0px 15px 20px 15px;
+  padding: 50px;
 }
 
 .css {
-    border: solid 1px black;
-    padding: 5px;
-    display: inline-block;
-    font-size: 32px;
-    font-family: Arial;
-    width: 100px;
-    height: 110px;
-    overflow: auto; 
-}
-
-.lista-nav li {
-    display: inline;
-    margin: 10px 80px 10px 80px;
-}
-
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
+  border: solid 1px black;
+  padding: 5px;
+  display: inline-block;
+  font-size: 32px;
+  font-family: Arial;
+  width: 100px;
+  height: 110px;
+  overflow: auto;
 }
 
 .descri {
-    background-color: #B2930F;
-    width: 450px;
-    height: 350px;
-    padding: 20px;
-    margin: 50px 150px 50px 150px; 
-    text-align: center;
-    position: relative;
-    z-index: -3;
+  background-color: #B2930F;
+  width: 450px;
+  height: 350px;
+  padding: 20px;
+  margin: 50px 150px 50px 150px;
+  text-align: center;
+  position: relative;
+  z-index: -3;
 }
 
 .card img {
-    width: 200px;
-    display: block;
-    margin: 0 auto;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
-
 .card p {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .actor {
-    width: 500px;
-    height: 380px;
-    position: top;
-    bottom: 0;
-    top: 0px;
-    right: 20px;
-    left: 20px;
+  width: 500px;
+  height: 380px;
+  position: top;
+  bottom: 0;
+  top: 0px;
+  right: 20px;
+  left: 20px;
 }
 
 .chica {
-    width: 250px;
-    height: 380px;
-    position: center;
-    margin-left: 420px;
+  width: 250px;
+  height: 380px;
+  position: center;
+  margin-left: 420px;
 }
 
 .camara {
-    width: 560px;
-    height: 315px;
-    position: center;
-    margin: 20px 150px 10px 80px;
-}
-
-.h2 {
-    text-align: center;
-    color: #07AA7F;
-    font-weight: bold;
-    font-family: "roboto";
-    margin: 10px 30px 10px 30px;
-}
-    
-.mapa {
-    margin: 50px 150px 50px 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.video {
-    margin: 10px 150px 50px 80px;
-}
-
-.reel {
-    background-color: #B2930F;
-    width: 560px;
-    height: 315px;
-    position: center;
-    text-align: center;
-    padding-top: 30px;
-    margin: 10px 150px 50px 80px;
-    }
-    
-.direccion {
-    font-family: "roboto";
-    margin: 20px 150px 20px;
-    text-align: center;
-}
-
-.caja-naranja {
-    margin: 20px 350px 20px ;
+  width: 560px;
+  height: 315px;
+  position: center;
+  margin: 20px 150px 10px 80px;
 }
 
 .director {
-    width: 480px;
-    height: 315px;
-    position: center;
-    margin: 20px 150px 10px 80px;
+  width: 480px;
+  height: 315px;
+  position: center;
+  margin: 20px 150px 10px 80px;
+}
+
+.mapa {
+  margin: 50px 150px 50px 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reel {
+  background-color: #B2930F;
+  width: 560px;
+  height: 315px;
+  position: center;
+  text-align: center;
+  padding-top: 30px;
+  margin: 10px 150px 50px 80px;
+}
+
+.direccion {
+  font-family: "roboto";
+  margin: 20px 150px 20px;
+  text-align: center;
+}
+
+.caja-naranja {
+  margin: 20px 350px 20px;
 }
 
 .sobre-container {
-    display: grid;
-    grid-template-columns: 300px 100px; 
-    grid-template-rows: 40px 100px; 
-}
-
-.navbar {
-    background-color: #FFD522;
+  display: grid;
+  grid-template-columns: 300px 100px;
+  grid-template-rows: 40px 100px;
 }
 
 #carouselExample {
-    width: 900%;
-    height: 100px;
+  width: 900%;
+  height: 100px;
 }
-
-.carousel-item img {
-    height: 80vh;
+#carouselExample .carousel-item img {
+  height: 80vh;
 }
-
 @media (min-with: 520px) {
-    .carousel-item img {
-        height: 50vh;
-    }
+  #carouselExample .carousel-item img {
+    height: 50vh;
+  }
 }
-
 @media (min-with: 768px) {
-    .carousel-item img {
-        height: 70vh;
-    }
+  #carouselExample .carousel-item img {
+    height: 70vh;
+  }
 }
-
 @media (min-with: 1024px) {
-    .carousel-item img {
-        height: 90vh;
-    }
+  #carouselExample .carousel-item img {
+    height: 90vh;
+  }
 }
 
 #section {
-    height: 80vh;
+  height: 80vh;
 }
-
 @media (min-with: 520px) {
-    #section {
-        height: 50vh;
-    }
+  #section {
+    height: 50vh;
+  }
 }
-
 @media (min-with: 768px) {
-    #section {
-        height: 70vh;
-    }
+  #section {
+    height: 70vh;
+  }
 }
-
 @media (min-with: 1024px) {
-    #section {
-        height: 90vh;
-    }
+  #section {
+    height: 90vh;
+  }
 }
-
-.cajita {
-    background-color: #FFD522;
-    height: 70px;
-    margin-top: 0%;
+#section .img-fluid {
+  width: 100%;
+  height: 80vh;
 }
-
-.nav-link {
-    color: grey;
-    font-weight: bold;
+#section .h2 my-5 {
+  text-align: center;
+  color: #07AA7F;
+  font-weight: bold;
+  font-family: "roboto";
+  margin: 10px 30px 10px 30px;
 }
-
-.text-center {
-    color: #07AA7F;
-    margin-top: 30px;
-    text-align: end;
-    font-weight: bold;
+#section .container-texto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  color: #C8FEDD;
 }
-
-.img-fluid {
-    width: 100%;
-    height: 80vh;
-}
-
-.container-texto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-}
-
-.titulo { 
-    text-align: center;
-    color:#B2930F;
-    font-weight: bold;
-    font-family: "roboto";
-    margin: 10px 30px 10px 30px;
+#section .titulo {
+  text-align: center;
+  color: #C8FEDD;
+  font-weight: bold;
+  font-family: "roboto";
+  margin: 10px 30px 10px 30px;
 }
 
 .container-reel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
+.container-reel .video {
+  margin: 10px 150px 50px 80px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,25 @@
+
+.boton {
+    width:100px;
+    height:30px;
+    text-align:center;
+    color:black;
+}
+
+.boton--borrar{
+    @extend .boton;
+    background-color: #C8FEDD;
+    color:yellow;
+}
+
+@mixin flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container {
+    @include flex-container;
+}
