@@ -56,18 +56,6 @@ header .nav-link {
   font-weight: bold;
 }
 
-footer .cajita {
-  background-color: #FFD522;
-  height: 70px;
-  margin-top: 0%;
-}
-footer .text-center {
-  color: #07AA7F;
-  margin-top: 30px;
-  text-align: end;
-  font-weight: bold;
-}
-
 h1 {
   font-family: "roboto";
   color: #C8FEDD;
@@ -105,15 +93,6 @@ a {
   text-align: center;
   position: relative;
   z-index: -3;
-}
-
-.card img {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-}
-.card p {
-  margin: 15px 0;
 }
 
 .actor {
@@ -156,16 +135,6 @@ a {
   gap: 20px;
 }
 
-.reel {
-  background-color: #B2930F;
-  width: 560px;
-  height: 315px;
-  position: center;
-  text-align: center;
-  padding-top: 30px;
-  margin: 10px 150px 50px 80px;
-}
-
 .direccion {
   font-family: "roboto";
   margin: 20px 150px 20px;
@@ -183,8 +152,8 @@ a {
 }
 
 #carouselExample {
-  width: 900%;
-  height: 100px;
+  width: 80%;
+  height: 50vh;
 }
 #carouselExample .carousel-item img {
   height: 80vh;
@@ -205,58 +174,211 @@ a {
   }
 }
 
-#section {
-  height: 80vh;
+.sec2 main {
+  font-size: 4rem;
+}
+.sec2 p {
+  font-size: 1.5rem;
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+section img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+section .titulo {
+  font-size: 2rem;
+}
+section .container-texto {
+  max-width: 600px;
+  margin: 0 auto;
+}
+section .container-texto h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+section .container-texto main {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 30px;
+    padding-top: 0%;
+  }
+  section img.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  section .titulo {
+    font-size: 1.5rem;
+  }
+  section .container-texto {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  section .container-texto h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  section .container-texto main {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section {
+    padding: 45px;
+    padding-top: 0%;
+  }
+  section img.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  section .titulo {
+    font-size: 2rem;
+  }
+  section .container-texto {
+    max-width: 170%;
+    padding: 0 20px;
+  }
+  section .container-texto h2 {
+    font-size: 1.5rem;
+    margin: 1.2rem 1;
+  }
+  section .container-texto main {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 60px;
+    padding-top: 0%;
+  }
+  section img.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  section .titulo {
+    font-size: 4rem;
+  }
+  section .container-texto {
+    max-width: 400%;
+    padding: 0 30px;
+  }
+  section .container-texto h2 {
+    font-size: 2rem;
+    margin: 2.5rem 2;
+    font-style: italic;
+  }
+  section .container-texto main {
+    font-size: 1.5rem;
+  }
+}
+.container-reel {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+.container-reel .video {
+  width: 100%;
+  height: auto;
+}
+.container-reel main {
+  font-size: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .container-reel .container-reel {
+    display: block;
+    justify-items: center;
+    gap: 20px;
+  }
+  .container-reel .container-reel .video {
+    max-width: 100%;
+  }
+  .container-reel .container-reel .tx {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-reel .container-reel {
+    display: block;
+    justify-items: center;
+    gap: 20px;
+  }
+  .container-reel .container-reel .video {
+    max-width: 100%;
+  }
+  .container-reel .container-reel .tx {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-reel .container-reel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+  .container-reel .container-reel .video {
+    width: 560px;
+    height: 315px;
+  }
+  .container-reel .container-reel .tx {
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  background-color: #FFD522;
+  color: #07AA7F;
+  padding: 10px;
+}
+footer .cajita {
+  text-align: center;
+  font-weight: bold;
+}
+
+#form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 @media (min-with: 520px) {
-  #section {
+  #form {
     height: 50vh;
   }
 }
 @media (min-with: 768px) {
-  #section {
+  #form {
     height: 70vh;
   }
 }
 @media (min-with: 1024px) {
-  #section {
+  #form {
     height: 90vh;
   }
 }
-#section .img-fluid {
+#form input[type=text], #form input[type=email], #form input[type=tel] {
   width: 100%;
-  height: 80vh;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-#section .h2 my-5 {
-  text-align: center;
-  color: #07AA7F;
+#form label {
   font-weight: bold;
-  font-family: "roboto";
-  margin: 10px 30px 10px 30px;
 }
-#section .container-texto {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  color: #C8FEDD;
-}
-#section .titulo {
-  text-align: center;
-  color: #C8FEDD;
-  font-weight: bold;
-  font-family: "roboto";
-  margin: 10px 30px 10px 30px;
-}
-
-.container-reel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.container-reel .video {
-  margin: 10px 150px 50px 80px;
+#form button[type=submit], #form [type=reset] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
